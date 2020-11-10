@@ -1,0 +1,19 @@
+title: Getting started with feature flags
+description: >-
+  A feature flag is a development technique used to enable or disable
+  functionality remotely without deploying code. This course will show you how
+  to use feature flags in your code effectively.
+template:
+  repo: getting-started-with-feature-flags-template
+  name: getting-started-with-feature-flags
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
